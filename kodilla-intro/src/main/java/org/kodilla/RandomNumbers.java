@@ -18,7 +18,7 @@ public class RandomNumbers {
         while (sum <= 5000) {
             int randomNumber = random.nextInt(31);
             numbers[count] = randomNumber;
-            
+
             sum += randomNumber;
             count++;
 
