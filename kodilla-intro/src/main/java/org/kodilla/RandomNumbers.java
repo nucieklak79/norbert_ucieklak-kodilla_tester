@@ -6,6 +6,7 @@ public class RandomNumbers {
     private int[] numbers;
     private int count;
 
+
     public RandomNumbers() {
         this.numbers = new int[1000];
         this.count = 0;
