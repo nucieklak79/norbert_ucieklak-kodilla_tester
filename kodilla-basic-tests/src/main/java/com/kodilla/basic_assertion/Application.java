@@ -7,11 +7,11 @@ public class Application {
         int b = 8;
         int sumResult = calculator.sum(a, b);
         int subtractResult = calculator.subtract(a, b);
-        int squareResult = calculator.square(a);
+        double squareResult = calculator.square(a);
 
-        boolean correct = ResoultChecker.assertEquals(13, sumResult);
-        boolean subCorrect = ResoultChecker.assertEquals(-3, subtractResult);
-        boolean squareCorrect = ResoultChecker.assertEquals(25, squareResult);
+        boolean correct = ResultChecker.assertEquals(13, sumResult);
+        boolean subCorrect = ResultChecker.assertEquals(-3, subtractResult);
+        boolean squareCorrect = ResultChecker.assertEquals(25, (int) squareResult);
         if (correct) {
             System.out.println("Metoda sum działa poprawnie dla liczb " + a + " i " + b);
         } else {
