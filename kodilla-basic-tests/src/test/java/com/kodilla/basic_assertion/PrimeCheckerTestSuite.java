@@ -7,57 +7,64 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PrimeCheckerTestSuite {
     private PrimeChecker checker = new PrimeChecker();
-    public static int count = 0;
+
     @Test
     public void shouldReturnFalseWhenPassingNotPrimeNumber() {
-
-        count++;
-        System.out.println("Count : " + count);
+        // Given
+        int a = 14;
+        // When
         boolean result = checker.isPrime(14);
+        // Then
         assertFalse(result);
     }
 
     @Test
     public void shouldReturnTrueWhenPassingPrimeNumber() {
-
-        count++;
-        System.out.println("Count : " + count);
+        // Given
+        int a = 13;
+        // When
         boolean result = checker.isPrime(13);
+        // Then
         assertTrue(result);
     }
 
     @Test
     public void shouldReturnTrueWhenPassingTwo() {
-
-        count++;
-        System.out.println("Count : " + count);
+        // Given
+        int a = 2;
+        // When
         boolean result = checker.isPrime(2);
+        // Then
         assertTrue(result);
     }
 
     @Test
     public void shouldReturnFalseWhenPassingOne() {
-
-        System.out.println("Count : " + checker.getCount());
-        count++;
-        System.out.println("Count : " + count);
+        // Given
+        int a = 1;
+        // When
         boolean result = checker.isPrime(1);
+        // Then
         assertFalse(result);
     }
 
     @Test
     public void shouldReturnFalseWhenPassingZero() {
-        count++;
-        System.out.println("Count : " + count);
+        // Given
+        int a = 0;
+        // When
         boolean result = checker.isPrime(0);
+        // Then
         assertFalse(result);
     }
 
     @Test
     public void shouldReturnFalseWhenPassingNegativeNumber() {
-        count++;
-        System.out.println("Count : " + count);
+        // Given
+        int a = -6;
+        // When
         boolean result = checker.isPrime(-6);
+        // Then
         assertFalse(result);
     }
 }
