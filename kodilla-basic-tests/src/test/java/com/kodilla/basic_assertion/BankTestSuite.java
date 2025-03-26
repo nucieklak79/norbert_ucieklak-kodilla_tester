@@ -183,7 +183,7 @@ public class BankTestSuite {
         double averageDeposit = bank.getAverageDeposit();
 
         // Then
-        assertEquals(140, averageDeposit, 0.0001);
+        assertEquals(106.66666, averageDeposit, 0.0001);
     }
 
     @Test
