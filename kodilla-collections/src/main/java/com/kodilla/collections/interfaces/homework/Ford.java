@@ -17,7 +17,6 @@ public class Ford implements Car {
     @Override
     public void increaseSpeed() {
         speed+=10;
-
     }
 
     @Override

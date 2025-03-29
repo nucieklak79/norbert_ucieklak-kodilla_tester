@@ -14,11 +14,9 @@ public class Mazda implements Car {
         return speed;
     }
 
-
     @Override
     public void increaseSpeed() {
         speed+=20;
-
     }
 
     @Override

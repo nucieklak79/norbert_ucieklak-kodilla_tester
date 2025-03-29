@@ -5,4 +5,5 @@ public interface Car {
     String getCarMake();
     void increaseSpeed();
     void decreaseSpeed();
+
 }
