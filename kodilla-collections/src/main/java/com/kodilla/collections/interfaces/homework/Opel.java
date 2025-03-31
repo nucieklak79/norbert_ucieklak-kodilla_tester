@@ -2,7 +2,7 @@ package com.kodilla.collections.interfaces.homework;
 
 public class Opel implements Car {
     private int speed = 0;
-    private String make = "Opel";
+    private final String make = "Opel";
 
     @Override
     public String getCarMake() {
