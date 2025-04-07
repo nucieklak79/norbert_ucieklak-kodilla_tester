@@ -5,15 +5,15 @@ import java.util.Map;
 
 public class SchoolDirectory {
     public static void main(String[] args) {
-        // Tworzenie mapy przyporządkowującej szkoły do dyrektorów
+
         Map<Principal, School> schoolMap = new HashMap<>();
 
-        // Tworzenie dyrektorów
+        // Creating Principals
         Principal principal1 = new Principal("Jan", "Kowalski");
         Principal principal2 = new Principal("Maria", "Nowak");
         Principal principal3 = new Principal("Adam", "Smith");
 
-        // Tworzenie szkół
+        // Creating schools
         School school1 = new School("Szkoła Podstawowa nr 1");
         school1.addClassSize(25);
         school1.addClassSize(30);
@@ -32,12 +32,12 @@ public class SchoolDirectory {
         school3.addClassSize(17);
         school3.addClassSize(19);
 
-        // Dodawanie wpisów do mapy
+        // Adding objects
         schoolMap.put(principal1, school1);
         schoolMap.put(principal2, school2);
         schoolMap.put(principal3, school3);
 
-        // Wyświetlanie informacji o dyrektorach i szkołach
+        // Displaying school details
         for (Map.Entry<Principal, School> entry : schoolMap.entrySet()) {
             Principal principal = entry.getKey();
             School school = entry.getValue();
