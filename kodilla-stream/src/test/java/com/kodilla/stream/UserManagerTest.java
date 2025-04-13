@@ -1,6 +1,5 @@
-import com.kodilla.stream.UserManager;
-import com.kodilla.stream.User;
-import com.kodilla.stream.UserRepository;
+package com.kodilla.stream;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -37,6 +36,6 @@ public class UserManagerTest {
         }
     }
 
-  
+
 
 }
