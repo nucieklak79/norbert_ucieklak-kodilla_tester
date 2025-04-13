@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class UserManagerTest {
     @Test
@@ -15,9 +18,9 @@ public class UserManagerTest {
         List<String> result = usersManager.filterChemistGroupUsernames();
 
         // Then
-        org.junit.jupiter.api.Assertions.assertEquals(2, result.size());
-        org.junit.jupiter.api.Assertions.assertTrue(result.contains("Walter White"));
-        org.junit.jupiter.api.Assertions.assertTrue(result.contains("Gale Boetticher"));
+        assertEquals(2, result.size());
+        assertTrue(result.contains("Walter White"));
+        assertTrue(result.contains("Gale Boetticher"));
 
     }
 
@@ -30,9 +33,9 @@ public class UserManagerTest {
         List<User> result = UserManager.filterOlderUsersThan(30);
 
         // Then
-        org.junit.jupiter.api.Assertions.assertEquals(5, result.size());
+        assertEquals(5, result.size());
         for (User user : result) {
-            org.junit.jupiter.api.Assertions.assertTrue(user.getAge() > 30);
+            assertTrue(user.getAge() > 30);
         }
     }
 
