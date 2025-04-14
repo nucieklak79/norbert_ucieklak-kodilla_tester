@@ -14,6 +14,7 @@ public class ForumStats {
                 .mapToInt(User::getNumberOfPost)
                 .average()
                 .orElse(0.0);
+
     }
 
     public static double averagePostsForUsersBelow40(List<User> users) {
