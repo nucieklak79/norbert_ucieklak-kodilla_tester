@@ -31,7 +31,7 @@ public class ForumStats {
         double avgAboveOrEqual40 = averagePostsForUsersAboveOrEqual40(users);
         double avgBelow40 = averagePostsForUsersBelow40(users);
 
-        System.out.println("Średnia liczba postów (wiek >= 40): " + avgAboveOrEqual40);
-        System.out.println("Średnia liczba postów (wiek < 40): " + avgBelow40);
+        System.out.println("Average number of posts published (user age >= 40): " + avgAboveOrEqual40);
+        System.out.println("Average number of posts published (user age < 40): " + avgBelow40);
     }
 }
