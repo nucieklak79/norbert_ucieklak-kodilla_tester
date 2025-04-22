@@ -9,11 +9,12 @@ import java.util.OptionalDouble;
 public class ForumStats {
 
     public static double averagePostsForUsersAboveOrEqual40(List<User> users) {
-        return users.stream()
+        double  resoult = users.stream()
                 .filter(user -> user.getAge() >= 40)
                 .mapToInt(User::getNumberOfPost)
                 .average()
                 .orElse(0.0);
+        return  resoult;
 
     }
 
