@@ -56,7 +56,7 @@ public class ShopTestSuite {
     @Test
     void testAddDuplicateOrder() {
         shop.addOrder(order1); // Adding first order
-        shop.addOrder(order4);
+        shop.addOrder(order4); // Shouldn't be added
         assertEquals(1, shop.getNumberOfOrders());
         assertEquals(150.50, shop.getTotalOrdersValue(), 0.001);
     }
