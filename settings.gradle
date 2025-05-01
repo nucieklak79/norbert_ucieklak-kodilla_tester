@@ -12,3 +12,5 @@ include 'kodilla-easter-wishes'
 include 'kodilla-easter-wishes'
 include 'kodilla-advanced-tests'
 
+
+include 'kodilla-spring-basic'
