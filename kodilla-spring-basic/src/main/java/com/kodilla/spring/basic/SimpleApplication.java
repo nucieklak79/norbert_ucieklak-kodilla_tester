@@ -1,4 +1,4 @@
-package com.kodilla.spring.basic.spring_dependency_injection;
+package com.kodilla.spring.basic;
 
 import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;

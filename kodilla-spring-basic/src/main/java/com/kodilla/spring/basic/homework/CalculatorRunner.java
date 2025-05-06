@@ -1,4 +1,4 @@
-package com.kodilla.spring.basic.spring_dependency_injection.homework;
+package com.kodilla.spring.basic.homework;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

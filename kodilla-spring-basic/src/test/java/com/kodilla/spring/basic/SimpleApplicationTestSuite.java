@@ -1,4 +1,4 @@
-package com.kodilla.spring.basic.spring_dependency_injection;
+package com.kodilla.spring.basic;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
