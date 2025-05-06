@@ -1,6 +1,4 @@
 package com.kodilla.spring.basic.homework;
-
-import com.kodilla.spring.basic.spring_dependency_injection.SkypeMessageService;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
