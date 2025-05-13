@@ -4,6 +4,8 @@ import com.kodilla.rest.domain.BookDto;
 import com.kodilla.rest.service.BookService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+
+import java.awt.print.Book;
 import java.util.ArrayList;
 import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -27,6 +29,16 @@ class BookControllerTest {
         assertThat(result).hasSize(2);
 
     }
+    @Test
+    void shouldAddBook() {
+        //Given
+        BookService bookServiceMock = Mockito.mock(BookService.class);
+        BookController bookController = new BookController(bookServiceMock);
+        BookDto book = new BookDto("Book title", "Book author");
+        //When
+        bookController.addBook(book);
+        //Then
+        Mockito.verify(bookServiceMock).addBook(book);
 
-
+    }
 }
