@@ -74,8 +74,8 @@ class BookControllerRestAssuredTest {
                 .post("/books")
                 .then()
                 .statusCode(201)
-                .body("title", equalTo("Clean Code"))
-                .body("author", equalTo("Robert C. Martin"));
+                .body("title", equalTo("Title 1"))
+                .body("author", equalTo("Author 1"));
 
     }
 
