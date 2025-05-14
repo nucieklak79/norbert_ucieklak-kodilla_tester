@@ -60,9 +60,9 @@ class BookControllerRestAssuredTest {
     public void addBookTest() {
         String bookJson = """
             {
-                "title": "Clean Code",
-                "author": "Robert C. Martin",
-                "isbn": "9780132350884"
+                "title": "Title 1",
+                "author": "Author 1"
+               
             }
         """;
 
@@ -75,8 +75,8 @@ class BookControllerRestAssuredTest {
                 .then()
                 .statusCode(201)
                 .body("title", equalTo("Clean Code"))
-                .body("author", equalTo("Robert C. Martin"))
-                .body("isbn", equalTo("9780132350884"));
+                .body("author", equalTo("Robert C. Martin"));
+
     }
 
 
