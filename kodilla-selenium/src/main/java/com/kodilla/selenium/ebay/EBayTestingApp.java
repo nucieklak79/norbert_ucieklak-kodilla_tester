@@ -1,16 +1,18 @@
-package com.kodilla.selenium.search;
+package com.kodilla.selenium.ebay;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class StoreSearchExample {
+public class EBayTestingApp {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.get("https://kodilla.com/pl/test/store");
-        WebElement inputField = driver.findElement(By.id("searchField"));
-        inputField.sendKeys("School");
-        inputField.submit();
+        driver.get("https://www.ebay.com");
+
+        WebElement ebaySearchField = driver.findElement(By.id("gh-ac"));
+        ebaySearchField.sendKeys("Laptop");
+        ebaySearchField.submit();
     }
 }
