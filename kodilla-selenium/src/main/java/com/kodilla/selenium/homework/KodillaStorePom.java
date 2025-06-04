@@ -1,6 +1,5 @@
 package com.kodilla.selenium.homework;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,6 +15,9 @@ public class KodillaStorePom {
     @FindBy(css = "input[id='searchField']")
     WebElement searchField;
 
+    @FindBy(css = "div.header")
+    List<WebElement> productCards;
+
     public KodillaStorePom() {
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         ChromeOptions chromeOptions = new ChromeOptions();
@@ -30,11 +32,10 @@ public class KodillaStorePom {
         searchField.clear();
         searchField.sendKeys(phrase);
     }
-    public int getResuldCount() {
-        List<WebElement> result = driver.findElements(By.xpath("//div[contains(@class, \"element\")]"));
-        return result.size();
-
+    public int getResultCount() {
+        return productCards.size();
     }
+
     public void close() {
         driver.close();
     }
