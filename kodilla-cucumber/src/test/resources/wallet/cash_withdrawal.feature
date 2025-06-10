@@ -10,4 +10,3 @@ Feature: Cash Withdrawal
     | 100 | 50 | 50 |
     | 50 | 10 | 40 |
     | 50 | 50 | 0 |
-    
